@@ -179,8 +179,6 @@ more information about the governance of the Node.js project, see
 **Brian White** &lt;mscdex@mscdex.net&gt;
 * [ofrobots](https://github.com/ofrobots) -
 **Ali Ijaz Sheikh** &lt;ofrobots@google.com&gt;
-* [orangemocha](https://github.com/orangemocha) -
-**Alexis Campailla** &lt;orangemocha@nodejs.org&gt;
 * [rvagg](https://github.com/rvagg) -
 **Rod Vagg** &lt;rod@vagg.org&gt;
 * [shigeki](https://github.com/shigeki) -
@@ -216,6 +214,8 @@ more information about the governance of the Node.js project, see
 **Robert Jefe Lindstaedt** &lt;robert.lindstaedt@gmail.com&gt;
 * [estliberitas](https://github.com/estliberitas) -
 **Alexander Makarenko** &lt;estliberitas@gmail.com&gt;
+* [fhinkel](https://github.com/fhinkel) -
+**Franziska Hinkelmann** &lt;franziska.hinkelmann@gmail.com&gt;
 * [firedfox](https://github.com/firedfox) -
 **Daniel Wang** &lt;wangyang0123@gmail.com&gt;
 * [geek](https://github.com/geek) -
@@ -254,6 +254,8 @@ more information about the governance of the Node.js project, see
 **Christopher Monsanto** &lt;chris@monsan.to&gt;
 * [Olegas](https://github.com/Olegas) -
 **Oleg Elifantiev** &lt;oleg@elifantiev.ru&gt;
+* [orangemocha](https://github.com/orangemocha) -
+**Alexis Campailla** &lt;orangemocha@nodejs.org&gt;
 * [othiym23](https://github.com/othiym23) -
 **Forrest L Norvell** &lt;ogd@aoaioxxysz.net&gt;
 * [petkaantonov](https://github.com/petkaantonov) -
@@ -319,8 +321,9 @@ more information about the governance of the Node.js project, see
 * [zkat](https://github.com/zkat) -
 **Kat Marchán** &lt;kzm@sykosomatic.org&gt;
 
-Collaborators & CTC members follow the [COLLABORATOR_GUIDE.md](./COLLABORATOR_GUIDE.md) in
-maintaining the Node.js project.
+Collaborators (which includes CTC members) follow the
+[COLLABORATOR_GUIDE.md](./COLLABORATOR_GUIDE.md) in maintaining the Node.js
+project.
 
 ### Release Team
 

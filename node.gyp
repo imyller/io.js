@@ -249,7 +249,7 @@
           ],
           'conditions': [
             [ 'node_module_version!="" and OS!="win"', {
-              'product_extension': 'so.<(node_module_version)',
+              'product_extension': '<(shlib_suffix)',
             }]
           ],
         }],
@@ -366,12 +366,19 @@
                   'conditions': [
                     ['OS in "linux freebsd" and node_shared=="false"', {
                       'ldflags': [
-                        '-Wl,--whole-archive <(PRODUCT_DIR)/<(OPENSSL_PRODUCT)',
+                        '-Wl,--whole-archive,'
+                            '<(PRODUCT_DIR)/obj.target/deps/openssl/'
+                            '<(OPENSSL_PRODUCT)',
                         '-Wl,--no-whole-archive',
                       ],
                     }],
+                    # openssl.def is based on zlib.def, zlib symbols
+                    # are always exported.
                     ['use_openssl_def==1', {
                       'sources': ['<(SHARED_INTERMEDIATE_DIR)/openssl.def'],
+                    }],
+                    ['OS=="win" and use_openssl_def==0', {
+                      'sources': ['deps/zlib/win32/zlib.def'],
                     }],
                   ],
                 }],
@@ -568,6 +575,8 @@
               '-X^DSO',
               '-X^_',
               '-X^private_',
+              # Base generated DEF on zlib.def
+              '-Bdeps/zlib/win32/zlib.def'
             ],
           },
           'conditions': [
